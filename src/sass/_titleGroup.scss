@@ -1,0 +1,28 @@
+$title-color: rgba(119, 119, 119, 0.8);
+
+.titleGroup {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.title__sup {
+    color: $title-color;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+.title__sub {
+    color: $title-color;
+    font-size: 1.25rem;
+}

@@ -1,0 +1,90 @@
+$Navbar-color: rgb(119, 119, 119);
+$Navbar-color-Hover: rgba(242, 242, 242, 0.8);
+$Dropdown-color: rgb(119, 119, 119);
+$Dropdown-color-Hover: rgba(242, 242, 242, 0.8);
+$Navbar-font-weight: 600;
+$logo-font-weight: 700;
+
+.Navbar {
+    font-weight: $Navbar-font-weight;
+    background: transparent;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    padding: 1rem 3rem;
+}
+
+.Navbar__logo {
+    font-size: 1.5rem;
+    font-weight: $logo-font-weight;
+    color: white;
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.Navbar__logo--red {
+    @extend .Navbar__logo;
+    color: red;
+}
+
+.Navbar__item {
+    display: flex;
+    padding: 0.75rem 1.2rem;
+    transition: 0.3s;
+    & > a {
+        color: $Navbar-color;
+    }
+    & > a:hover {
+        text-decoration: none;
+        color: $Navbar-color-Hover;
+    }
+}
+
+
+
+.Dropdown__menu {
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.3);
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    left: 0rem;
+    padding: 0.5rem 0rem;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    
+    &::before {
+        bottom: 100%;
+        left: 40px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-bottom-color: #fff;
+        border-width: 8px;
+        margin-left: -8px;
+    }
+}
+
+.Dropdown__item {
+    display: block;
+    color: $Dropdown-color;
+    padding: 0.2rem 2rem;
+    transition: 0.3s;
+    &:hover {
+        text-decoration: none;
+        color: #f2f2f2;
+        background-color: $Dropdown-color;
+    }
+}
+
+.position--relative {
+    position: relative !important;
+}
+
+.display--block {
+    display: block !important;
+}

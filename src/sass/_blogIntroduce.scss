@@ -1,0 +1,25 @@
+$color: rgba(119, 119, 119, 0.8);
+$color-title: rgb(119, 119, 119);
+
+.weDoBlog__body {
+    margin-bottom: 4rem;
+}
+
+.blog_icon{
+    width: 3rem;
+    margin-bottom: 0.6rem;
+}
+
+.blog__title {
+    color: $color-title;
+}
+
+.blog__text {
+    color: $color;
+}
+
+.blog__link {
+    &:hover {
+        text-decoration: none;
+    }
+}

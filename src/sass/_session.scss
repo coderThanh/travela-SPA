@@ -1,0 +1,18 @@
+$background-session: #f2f2f2;
+
+.session__background{
+    background-color: $background-session;
+}
+
+.session__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.session__context{
+    display: flex;
+    flex-wrap: wrap;
+}

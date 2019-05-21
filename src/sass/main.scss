@@ -1,3 +1,4 @@
+
 $font-quote: 'Arima Madurai', cursive;
 $font-text: 'Roboto', sans-serif;
 $color-bg01: #f2f2f2;
@@ -11,3 +12,9 @@ $color-bg02: #3f4a4e;
     margin: 0px;
     padding: 0px;
 }
+
+@import './navbar';
+@import './headerOverlay';
+@import './session';
+@import './_titleGroup.scss';
+@import './blogIntroduce';
