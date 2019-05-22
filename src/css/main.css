@@ -107,6 +107,12 @@
 .session__background {
   background-color: #f2f2f2; }
 
+.session__background02 {
+  background-color: rgba(63, 74, 78, 0.1); }
+
+.session__background03 {
+  background-color: rgba(42, 54, 59, 0.9); }
+
 .session__content {
   display: flex;
   flex-wrap: wrap;
@@ -128,7 +134,7 @@
   letter-spacing: 0.05rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  font-size: 1.1rem; }
+  font-size: 1rem; }
 
 .title {
   font-size: 3.5rem;
@@ -141,18 +147,185 @@
   color: rgba(119, 119, 119, 0.8);
   font-size: 1.25rem; }
 
-.weDoBlog__body {
+.Introduce__body {
   margin-bottom: 4rem; }
 
-.blog_icon {
+.Introduce__icon {
   width: 3rem;
-  margin-bottom: 0.6rem; }
+  margin-bottom: 0.6rem;
+  filter: opacity(0.5); }
 
-.blog__title {
+.Introduce__title {
   color: #777777; }
 
-.blog__text {
+.Introduce__text {
   color: rgba(119, 119, 119, 0.8); }
 
-.blog__link:hover {
+.Introduce__link:hover {
   text-decoration: none; }
+
+.Galley__item {
+  height: auto;
+  max-height: 250px;
+  min-height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-bottom: 2rem; }
+  .Galley__item:hover .Galley__title {
+    opacity: 1;
+    padding-bottom: 1rem; }
+
+.Galley__title {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1rem;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+  box-shadow: 1px 1px 20px 7px rgba(0, 0, 0, 0.4);
+  transition: 0.4s;
+  opacity: 0; }
+
+.Comment__Body {
+  margin-bottom: 4rem;
+  background-color: white;
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  position: relative; }
+  .Comment__Body::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #fff;
+    position: absolute;
+    bottom: -30px;
+    left: 80px; }
+
+.Icon-Quote {
+  width: 0.4rem;
+  margin-bottom: 0.8rem;
+  filter: opacity(0.7); }
+
+.Comment__avatar {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 1rem; }
+
+.Comment__cite {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: rgba(119, 119, 119, 0.8); }
+
+.BlogNews {
+  background-color: white;
+  padding: 1.5rem 1.5rem;
+  margin-bottom: 3rem;
+  transition: 0.4s; }
+  .BlogNews:hover {
+    transform: translateY(-20px); }
+
+.Blog__date {
+  color: rgba(119, 119, 119, 0.7);
+  text-transform: uppercase;
+  font-size: 0.8rem; }
+
+.Blog__img {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem; }
+
+.Blog__title {
+  margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4497e7; }
+  .Blog__title:hover {
+    text-decoration: none; }
+
+.Blog__text {
+  color: #777777; }
+
+.Btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem; }
+
+.Btn--red {
+  background-color: #f35f55; }
+
+.Text--while {
+  color: white !important; }
+
+.Uppercase {
+  text-transform: uppercase !important; }
+
+.Font--bold {
+  font-weight: 500; }
+
+.Text--smaill {
+  font-size: 0.8rem; }
+
+.Text--center {
+  text-align: center; }
+
+.Capitalize {
+  text-transform: capitalize; }
+
+.Link--secondary {
+  color: rgba(0, 0, 0, 0.6); }
+  .Link--secondary:hover {
+    color: rgba(0, 0, 0, 0.6); }
+
+.Dl--block {
+  display: block; }
+
+.Mb--half {
+  margin-bottom: 0.5rem; }
+
+.Content--center {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+
+.Footer__history {
+  padding: 0rem 2rem;
+  margin-bottom: 5rem; }
+
+.Footer__logo {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem; }
+
+.Footer__link {
+  padding-top: 1rem; }
+
+.Footer__contact {
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  display: flex; }
+
+.Footer__iconGroup {
+  display: flex;
+  justify-content: space-between; }
+
+.Footer__icon {
+  height: 1.3rem;
+  filter: opacity(0.5); }

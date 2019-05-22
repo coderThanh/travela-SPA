@@ -32,6 +32,15 @@ export default class sessionDestination extends Component {
                     imgUrl: srcImg03,
                     imgTitle: "Lorem ispum"
                 },
+                {
+                    imgUrl: srcImg01,
+                    imgTitle: "Lorem ispum"
+                },
+                {
+                    imgUrl: srcImg03,
+                    imgTitle: "Lorem ispum"
+                },
+
             ],
         }
 

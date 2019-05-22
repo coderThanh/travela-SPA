@@ -1,0 +1,35 @@
+
+.Galley__item {
+    height: auto;
+    max-height: 250px;
+    min-height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-bottom: 2rem;
+
+    &:hover .Galley__title {
+        opacity: 1;
+        padding-bottom: 1rem;
+        
+    }
+}
+
+.Galley__title {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 1rem;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    box-shadow: 1px 1px 20px 7px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+    opacity: 0;
+}

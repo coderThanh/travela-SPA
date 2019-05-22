@@ -1,0 +1,41 @@
+$color-author: rgba(119, 119, 119, 0.8);
+
+.Comment__Body {
+    margin-bottom: 4rem;
+    background-color: white;
+    padding: 1.5rem 1.5rem;
+    border-radius: 5px;
+    position: relative;
+
+    &::after {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 0px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 30px solid #fff;
+        position: absolute;
+        bottom: -30px;
+        left: 80px;
+    }
+}
+
+.Icon-Quote {
+    width: 0.4rem;
+    margin-bottom: 0.8rem;
+    filter: opacity(0.7);
+}
+
+.Comment__avatar {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.Comment__cite {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: $color-author;
+}

@@ -11,11 +11,11 @@ export default class blogIntroduce extends Component {
     render() {
         const { blogSrc, blogTittle, blogText } = this.props;
         return(
-            <div className='weDoBlog__body'>
-                <img className='blog_icon' src={ blogSrc } alt='icon'></img>
-                <h3 className='blog__title'> { blogTittle } </h3>
-                <p className='blog__text'> { blogText } </p>
-                <a className='blog__link' href='#'>Read more</a>
+            <div className='Introduce__body'>
+                <img className='Introduce__icon' src={ blogSrc } alt='icon'></img>
+                <h3 className='Introduce__title'> { blogTittle } </h3>
+                <p className='Introduce__text'> { blogText } </p>
+                <a className='Introduce__link' href='#'>Read more</a>
             </div>
         )
     }

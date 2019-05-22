@@ -1,0 +1,12 @@
+$btn-red: #f35f55;
+
+.Btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+}
+
+.Btn--red {
+    background-color: $btn-red;
+}

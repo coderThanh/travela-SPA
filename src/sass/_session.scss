@@ -1,7 +1,17 @@
 $background-session: #f2f2f2;
+$background-session02: rgba(63, 74, 78, 0.1);
+$background-session03: rgba(42, 54, 59, 0.9);
 
 .session__background{
     background-color: $background-session;
+}
+
+.session__background02 {
+    background-color: $background-session02;
+}
+
+.session__background03 {
+    background-color: $background-session03;
 }
 
 .session__content {

@@ -1,0 +1,48 @@
+
+$color: rgba(119, 119, 119, 0.7);
+$color-text: rgb(119, 119, 119);
+$color-title: #4497e7;
+
+
+
+.BlogNews {
+    background-color: white;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 3rem;
+    transition: 0.4s;
+
+    &:hover {
+        transform: translateY(-20px);
+    }
+}
+
+.Blog__date {
+    color: $color;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    
+}
+
+.Blog__img {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+
+.Blog__title {
+    margin-bottom: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $color-title;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.Blog__text {
+    color: $color-text;
+}

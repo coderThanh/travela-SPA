@@ -1,0 +1,38 @@
+
+.Footer__history{
+    padding: 0rem 2rem;
+    margin-bottom: 5rem;
+}
+
+.Footer__logo {
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.Footer__link {
+    padding-top: 1rem;
+}
+
+.Footer__contact {
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    display: flex;
+    
+}
+
+.Footer__iconGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer__icon {
+    height: 1.3rem;
+    filter: opacity(0.5);
+}
+
+
+
+
+
