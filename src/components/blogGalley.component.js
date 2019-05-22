@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 
 
-export default class blogGalley extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        const { galleyTitle, galleyUrl } = this.props;
-
+export default function({ galleyTitle, galleyUrl, galleyDiscount }){
         return(
             <div 
                 className="Galley__item" 
@@ -16,7 +9,13 @@ export default class blogGalley extends Component {
                     { backgroundImage: `URL(${galleyUrl})`}
                 }>
                 <h5 className="Galley__title"> { galleyTitle } </h5>
+                { 
+                    galleyDiscount && <div className="Icon__Discount">
+                        <p className="Discount__text">Discount</p>
+                        <p className="Discount__number">{ galleyDiscount }%</p>
+                    </div>
+                }
             </div>
         )
-    }
+
 }

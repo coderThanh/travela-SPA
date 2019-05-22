@@ -7,13 +7,18 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     &:hover .Galley__title {
         opacity: 1;
         padding-bottom: 1rem;
         
     }
+
+    &:hover .Icon__Discount {
+        transform: scale(1.2);
+    }
+    
 }
 
 .Galley__title {
@@ -32,4 +37,35 @@
     box-shadow: 1px 1px 20px 7px rgba(0, 0, 0, 0.4);
     transition: 0.4s;
     opacity: 0;
+}
+
+.Icon__Discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: #ffa501;
+    color: white;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-bottom: 0px;
+    transform: rotate(325deg);
+    transition: 0.4s;
+
+}
+
+.Discount__text {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    transform: translateY(0.25rem);
+}
+
+.Discount__number {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    transform: translateY(-0.25rem);
 }

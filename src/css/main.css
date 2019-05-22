@@ -30,7 +30,8 @@
   padding: 0.75rem 1.2rem;
   transition: 0.3s; }
   .Navbar__item > a {
-    color: #777777; }
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); }
   .Navbar__item > a:hover {
     text-decoration: none;
     color: rgba(242, 242, 242, 0.8); }
@@ -172,10 +173,12 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
   .Galley__item:hover .Galley__title {
     opacity: 1;
     padding-bottom: 1rem; }
+  .Galley__item:hover .Icon__Discount {
+    transform: scale(1.2); }
 
 .Galley__title {
   position: absolute;
@@ -193,6 +196,33 @@
   box-shadow: 1px 1px 20px 7px rgba(0, 0, 0, 0.4);
   transition: 0.4s;
   opacity: 0; }
+
+.Icon__Discount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa501;
+  color: white;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-bottom: 0px;
+  transform: rotate(325deg);
+  transition: 0.4s; }
+
+.Discount__text {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  transform: translateY(0.25rem); }
+
+.Discount__number {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  transform: translateY(-0.25rem); }
 
 .Comment__Body {
   margin-bottom: 4rem;
@@ -264,10 +294,19 @@
   cursor: pointer;
   border: none;
   border-radius: 0.2rem;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+  outline: none !important;
+  transition: 0.3s; }
+  .Btn:active {
+    transform: scale(0.9); }
+  .Btn:hover {
+    transform: scale(1.1); }
 
 .Btn--red {
   background-color: #f35f55; }
+
+.Btn--dark {
+  background-color: rgba(0, 0, 0, 0.6); }
 
 .Text--while {
   color: white !important; }
@@ -328,4 +367,21 @@
 
 .Footer__icon {
   height: 1.3rem;
-  filter: opacity(0.5); }
+  filter: opacity(0.5);
+  transition: 0.4s; }
+  .Footer__icon:active {
+    transform: scale(0.9); }
+  .Footer__icon:hover {
+    transform: scale(1.1); }
+
+.Footer__button {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem; }
+
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebeced;
+  padding-bottom: 5rem; }

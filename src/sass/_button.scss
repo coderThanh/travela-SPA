@@ -1,12 +1,26 @@
 $btn-red: #f35f55;
+$btn-dark: rgba(0, 0, 0, 0.6);
 
 .Btn {
     cursor: pointer;
     border: none;
     border-radius: 0.2rem;
     padding: 0.5rem 1rem;
+    outline: none !important;
+    transition: 0.3s;
+
+    &:active {
+        transform: scale(0.9);
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .Btn--red {
     background-color: $btn-red;
+}
+
+.Btn--dark {
+    background-color: $btn-dark;
 }

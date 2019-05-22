@@ -9,11 +9,8 @@ import {
 } from 'reactstrap';
 
 import Home from '../pages/home.page';
-
-function Asian() {
-    return <h2>Asian</h2>;
-}
-
+import Discount from '../pages/discount.page';
+import Blog from '../pages/blog.page';
 function Japan() {
     return <h2>Japan</h2>;
 }
@@ -22,16 +19,8 @@ function Europe() {
     return <h2>Europe</h2>;
 }
 
-function Discount() {
+function Asian() {
     return <h2>Discount</h2>;
-}
-  
-function About() {
-    return <h2>About</h2>;
-}
-
-function Blog() {
-    return <h2>Blog</h2>;
 }
 
 function Contact() {
@@ -95,9 +84,6 @@ class NavigationRouter extends Component {
                                     <Link to="/discount/">Discount</Link>
                                 </li>
                                 <li className="Navbar__item">
-                                    <Link to="/about/">about</Link>
-                                </li>
-                                <li className="Navbar__item">
                                     <Link to="/blog/">Blog</Link>
                                 </li>
                                 <li className="Navbar__item">
@@ -112,7 +98,6 @@ class NavigationRouter extends Component {
                     <Route path="/japan/" component={Japan} />
                     <Route path="/europe" exact component={Europe} />
                     <Route path="/discount/" component={Discount} />
-                    <Route path="/about/" component={About} />
                     <Route path="/blog" exact component={Blog} />
                     <Route path="/contact/" component={Contact} />
                 </div>

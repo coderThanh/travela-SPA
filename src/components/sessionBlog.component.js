@@ -2,55 +2,15 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 import TitleGroup from './titleGroup.componet';
-import blogImgSrc01 from '../img/pexels-photo-27603.jpg';
-import blogImgSrc02 from '../img/pexels-photo-104750.jpeg';
-import blogImgSrc03 from '../img/beach-beverage-caribbean-cocktail-68672.jpeg';
-import blogAvatarSrc from '../img/person1.jpg';
 import BlogNews from './blogNews.component';
-
 export default class sessionDestination extends Component {
     constructor(props) {
         super(props);
-
-        this.state= {
-            contextTitle: {
-                titleSup: "thoughts & ideas",
-                title: "our blog",
-                titleSub: "Dolor sit amet consectetur adipiscing elit Dolor sit amet consectetur adipiscing elit Dolor sit amet consectetur adipiscing elit.",
-            },
-            blogItems: [
-                {
-                    blogDate: "sep, 12th",
-                    blogImgSrc: blogImgSrc01,
-                    blogTitle: "Lorem Ipsum Dolor Sit",
-                    blogText: "Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.",
-                    blogAvatarSrc: blogAvatarSrc,
-                    blogCite: "Mike Adam",
-                },
-                {
-                    blogDate: "sep, 12th",
-                    blogImgSrc: blogImgSrc02,
-                    blogTitle: "Lorem Ipsum Dolor Sit",
-                    blogText: "Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.",
-                    blogAvatarSrc: blogAvatarSrc,
-                    blogCite: "Mike Adam",
-                },
-                {
-                    blogDate: "sep, 12th",
-                    blogImgSrc: blogImgSrc03,
-                    blogTitle: "Lorem Ipsum Dolor Sit",
-                    blogText: "Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.",
-                    blogAvatarSrc: blogAvatarSrc,
-                    blogCite: "Mike Adam",
-                },
-            ],
-        }
-
     }
 
     render() {
-        const { titleSup, title, titleSub } = this.state.contextTitle;
-        const {  blogItems } = this.state;
+        const { titleSup, title, titleSub } = this.props.children.contextTitle;
+        const {  blogItems } = this.props.children;
 
         return(
         <Container fluid className="session__background02">
@@ -83,5 +43,4 @@ export default class sessionDestination extends Component {
                 
             )
     }
-
 }
