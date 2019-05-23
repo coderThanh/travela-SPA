@@ -25,11 +25,12 @@
 
 .overlay__text {
     color: white;
+    text-align: center;
     font-style: 2rem;
     font-size: 3.5rem;
     font-weight: 400;
     text-transform: uppercase;
-    z-index: 1000;
+    z-index: 10;
     position: absolute;
     letter-spacing: 0.2rem;
     text-shadow: 3px 3px 20px #000;

@@ -6,6 +6,7 @@ import {
     Navbar,
     NavbarToggler,
     Nav,
+    Row,
 } from 'reactstrap';
 
 import Home from '../pages/home.page';
@@ -48,10 +49,14 @@ class NavigationRouter extends Component {
             <Router>
                 <div className="">
                     <Navbar  className="Navbar" expand="md">
-                        <Link className="Navbar__logo" to="/">
-                            TRAVELA<span className="Navbar__logo--red">.</span>
-                        </Link>
-                        <NavbarToggler onClick={this.toggleNavbar} />
+                        <Row className="Navbar__direct">
+                            <Link className="Navbar__logo" to="/">
+                                TRAVELA<span className="Navbar__logo--red">.</span>
+                            </Link>
+                            <button onClick={this.toggleNavbar} className="Navbar__btn">
+                                { !this.state.isOpen ? <i class="fas fa-bars"></i> : <i class="fas fa-times"></i>}
+                            </button>
+                        </Row>
                         <Collapse className="Navbar__main" isOpen={this.state.isOpen} navbar>
                             <Nav className="Navbar__ul ml-auto" navbar>
                                 <li className="Navbar__item">

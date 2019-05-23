@@ -1,0 +1,57 @@
+
+
+@media only screen and(min-width:768px) {
+    .Navbar__btn {
+        display: none;
+    }    
+}
+
+@media only screen and(max-width:991px) {
+    .Navbar__btn {
+        display: none;
+    } 
+    
+    .Contact__getInformation {
+        padding: 0rem 1rem;
+    }
+
+    .Contact__item {
+        padding: 0rem 1rem;
+    }
+}
+
+
+@media only screen and(max-width:767px) {
+    .Navbar {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 0px;
+    }
+
+    .Navbar__btn {
+        display: block;
+        background-color: transparent;
+    }
+
+    .Navbar__direct {
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        justify-content: space-between;
+        padding: 0.5rem 2.5rem;
+        margin: 0;
+    }
+
+    .Navbar__main {
+        padding: 0.5rem 2.5rem;
+    }
+
+    .Footer__history, .Footer__link{
+        margin-bottom: 2rem;
+    }
+
+    .Footer__link {
+        width: max-content;
+    }
+
+    
+}
