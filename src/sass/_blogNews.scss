@@ -33,8 +33,9 @@ $color-title: #4497e7;
 .Blog__title {
     margin-bottom: 1rem;
     margin-bottom: 1rem;
+    text-transform: capitalize;
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     color: $color-title;
 

@@ -15,7 +15,7 @@ export default class blogIntroduce extends Component {
                 <img className='Introduce__icon' src={ blogSrc } alt='icon'></img>
                 <h3 className='Introduce__title'> { blogTittle } </h3>
                 <p className='Introduce__text'> { blogText } </p>
-                <a className='Introduce__link' href='#'>Read more</a>
+                <a className='Link--primary' href='#'>Read more</a>
             </div>
         )
     }

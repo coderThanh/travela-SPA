@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import TitleGroup from './titleGroup.componet';
+import TitleGroup from '../components/titleGroup.componet';
 
 export default class sessionDestination extends Component {
     constructor(props) {
@@ -38,7 +38,7 @@ export default class sessionDestination extends Component {
                 <Col sm={ 12 } className='session__context'>
                     {
                         <div className="Content--center">
-                            <button className="Btn Btn--red Text--while Uppercase Font--bold"> { btnItems.btnText } </button>
+                            <a className="Link Btn Btn--red Text--while Uppercase Font--bold" href="#"> { btnItems.btnText } </a>
                         </div>
                     }
                 </Col>

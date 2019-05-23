@@ -1,3 +1,4 @@
+$color-sale: #ffa501;
 
 .Galley__item {
     height: auto;
@@ -44,16 +45,16 @@
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    background-color: #ffa501;
+    background-color: $color-sale;
     color: white;
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     font-weight: 700;
     margin-bottom: 0px;
-    transform: rotate(325deg);
+    transform: rotate(325deg) scale(0.7) translatex(-0.5rem) translateY(-3rem);
     transition: 0.4s;
-
+    
 }
 
 .Discount__text {

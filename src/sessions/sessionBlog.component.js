@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import TitleGroup from './titleGroup.componet';
-import BlogGalley from '../components/blogGalley.component';
-
+import TitleGroup from '../components/titleGroup.componet';
+import BlogNews from '../components/blogNews.component';
 
 export default class sessionDestination extends Component {
     constructor(props) {
@@ -12,10 +11,10 @@ export default class sessionDestination extends Component {
 
     render() {
         const { titleSup, title, titleSub } = this.props.children.contextTitle;
-        const { imgItems } = this.props.children;
+        const {  blogItems } = this.props.children;
 
         return(
-        <Container fluid>
+        <Container fluid className="session__background02">
             <Container className="session__content">
                 <Col sm={ 9 } className='session__title'>
                     <TitleGroup 
@@ -26,13 +25,16 @@ export default class sessionDestination extends Component {
                 </Col>
                 <Col sm={ 12 } className='session__context'>
                     {
-                        imgItems.map((item, index) =>
+                        blogItems.map((item, index) =>
                             <Col sm={12} md={6} lg={4} key={ index }>
-                                <BlogGalley 
-                                    galleyUrl={ item.imgUrl } 
-                                    galleyTitle={ item.imgTitle } 
-                                    galleyDiscount={ item.imgDiscount }>
-                                </BlogGalley>
+                                <BlogNews 
+                                    blogDate={ item.blogDate }
+                                    blogImgSrc={ item.blogImgSrc }
+                                    blogTitle={ item.blogTitle }
+                                    blogText={ item.blogText }
+                                    blogAvatarSrc={ item.blogAvatarSrc }
+                                    blogCite={ item.blogCite }
+                                ></BlogNews>
                             </Col>
                         )
                     }
@@ -42,5 +44,4 @@ export default class sessionDestination extends Component {
                 
             )
     }
-
 }

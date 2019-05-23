@@ -1,5 +1,6 @@
 $btn-red: #f35f55;
 $btn-dark: rgba(0, 0, 0, 0.6);
+$btn-primary : #0C9CEE;
 
 .Btn {
     cursor: pointer;
@@ -7,6 +8,7 @@ $btn-dark: rgba(0, 0, 0, 0.6);
     border-radius: 0.2rem;
     padding: 0.5rem 1rem;
     outline: none !important;
+    text-transform: capitalize;
     transition: 0.3s;
 
     &:active {
@@ -19,8 +21,21 @@ $btn-dark: rgba(0, 0, 0, 0.6);
 
 .Btn--red {
     background-color: $btn-red;
+    color: white;
+
+    &:hover {
+        color: white;
+    }
 }
 
 .Btn--dark {
     background-color: $btn-dark;
 }
+
+.Btn--primary {
+    background-color: $btn-primary;
+    color: white;
+}
+
+
+

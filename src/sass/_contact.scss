@@ -1,0 +1,42 @@
+$color-link : #0C9CEE;
+
+.Contact__title {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.Contact__icon {
+    margin-right: 1rem;
+}
+
+.Contact__getInformation {
+    padding: 0rem 4rem;
+}
+
+.Contact__inputGroup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.Input__group {
+    margin-bottom: 1rem;
+}
+
+.Input__label {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+}
+
+.Input__text {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    outline: inherit;
+}
+

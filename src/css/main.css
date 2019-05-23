@@ -204,12 +204,12 @@
   align-items: center;
   background-color: #ffa501;
   color: white;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   font-weight: 700;
   margin-bottom: 0px;
-  transform: rotate(325deg);
+  transform: rotate(325deg) scale(0.7) translatex(-0.5rem) translateY(-3rem);
   transition: 0.4s; }
 
 .Discount__text {
@@ -224,12 +224,28 @@
   font-size: 1.5rem;
   transform: translateY(-0.25rem); }
 
+.Detail__body {
+  padding: 0rem 1rem;
+  margin-bottom: 4rem;
+  transition: 0.4s; }
+  .Detail__body:hover {
+    transform: scale(1.05); }
+
+.Detail__datePrice {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3); }
+
 .Comment__Body {
   margin-bottom: 4rem;
   background-color: white;
   padding: 1.5rem 1.5rem;
   border-radius: 5px;
-  position: relative; }
+  position: relative;
+  transition: 0.4s; }
   .Comment__Body::after {
     content: " ";
     display: block;
@@ -241,6 +257,8 @@
     position: absolute;
     bottom: -30px;
     left: 80px; }
+  .Comment__Body:hover {
+    transform: scale(1.05); }
 
 .Icon-Quote {
   width: 0.4rem;
@@ -280,8 +298,9 @@
 .Blog__title {
   margin-bottom: 1rem;
   margin-bottom: 1rem;
+  text-transform: capitalize;
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #4497e7; }
   .Blog__title:hover {
@@ -296,6 +315,7 @@
   border-radius: 0.2rem;
   padding: 0.5rem 1rem;
   outline: none !important;
+  text-transform: capitalize;
   transition: 0.3s; }
   .Btn:active {
     transform: scale(0.9); }
@@ -303,13 +323,34 @@
     transform: scale(1.1); }
 
 .Btn--red {
-  background-color: #f35f55; }
+  background-color: #f35f55;
+  color: white; }
+  .Btn--red:hover {
+    color: white; }
 
 .Btn--dark {
   background-color: rgba(0, 0, 0, 0.6); }
 
+.Btn--primary {
+  background-color: #0C9CEE;
+  color: white; }
+
 .Text--while {
-  color: white !important; }
+  color: white; }
+
+.Text--muted {
+  color: rgba(0, 0, 0, 0.6); }
+
+.Text--sale {
+  color: #ffa501; }
+
+.Link:hover {
+  text-decoration: none; }
+
+.Link--primary {
+  color: #0C9CEE; }
+  .Link--primary:hover {
+    text-decoration: none; }
 
 .Uppercase {
   text-transform: uppercase !important; }
@@ -317,25 +358,29 @@
 .Font--bold {
   font-weight: 500; }
 
-.Text--smaill {
+.Text--small {
   font-size: 0.8rem; }
 
 .Text--center {
   text-align: center; }
 
 .Capitalize {
-  text-transform: capitalize; }
+  text-transform: capitalize !important; }
 
 .Link--secondary {
   color: rgba(0, 0, 0, 0.6); }
   .Link--secondary:hover {
-    color: rgba(0, 0, 0, 0.6); }
+    text-decoration: none;
+    color: #0C9CEE; }
 
 .Dl--block {
   display: block; }
 
 .Mb--half {
   margin-bottom: 0.5rem; }
+
+.Mr--half {
+  margin-right: 0.5rem; }
 
 .Content--center {
   display: flex;
@@ -385,3 +430,35 @@
   align-items: center;
   background-color: #ebeced;
   padding-bottom: 5rem; }
+
+.Contact__title {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem; }
+
+.Contact__icon {
+  margin-right: 1rem; }
+
+.Contact__getInformation {
+  padding: 0rem 4rem; }
+
+.Contact__inputGroup {
+  display: flex;
+  flex-wrap: wrap; }
+
+.Input__group {
+  margin-bottom: 1rem; }
+
+.Input__label {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem; }
+
+.Input__text {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  outline: inherit; }

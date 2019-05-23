@@ -24,7 +24,7 @@ export default class Footer extends Component {
                             <p className="Introduce__text">
                                 Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.
                             </p>
-                            <a className="Introduce__link" href="#">Learn more</a>
+                            <a className="Link--primary" href="#">Learn more</a>
                         </Col>
                         <Col className="Footer__link" sm={4} md={2}>
                             <a className="Link--secondary Capitalize Dl--block Font--bold Mb--half" href="#">about</a>
@@ -43,23 +43,23 @@ export default class Footer extends Component {
                         </Col>
                     </Row>
                     <Row className="Footer__contact">
-                        <p className="Introduce__text Text--smaill Text--center">©2016 Coder-Thanh. All Rights Reserved. </p>
-                        <p className="Introduce__text Text--smaill Text--center">
+                        <p className="Introduce__text Text--small Text--center">©2016 Coder-Thanh. All Rights Reserved. </p>
+                        <p className="Introduce__text Text--small Text--center">
                             Designed by 
-                            <a className="Introduce__link" href="#"> Coder-Thanh</a> 
+                            <a className="Link--primary" href="#"> Coder-Thanh</a> 
                         </p>
                         <div className="Footer__iconGroup Text--center">
-                            <a className="Introduce__link" href="#"> 
-                                <img className="Footer__icon" src={ iconSrcTwitter } alt="Twitter"/>
+                            <a className="Link--primary" href="#"> 
+                                <i class="fab fa-twitter fa-lg"></i>
                             </a>
-                            <a className="Introduce__link" href="#"> 
-                                <img className="Footer__icon" src={ iconSrcFaceBook } alt="FaceBook"/>
+                            <a className="Link--primary" href="#"> 
+                                <i class="fab fa-facebook-square fa-lg"></i>
                             </a>
-                            <a className="Introduce__link" href="#"> 
-                                <img className="Footer__icon" src={ iconSrcInstargam } alt="Instargam"/>
+                            <a className="Link--primary" href="#"> 
+                                <i class="fab fa-instagram fa-lg"></i>
                             </a>
-                            <a className="Introduce__link" href="#"> 
-                                <img className="Footer__icon" src={ iconSrcMail } alt="Mail"/>
+                            <a className="Link--primary" href="#"> 
+                                <i class="fas fa-envelope fa-lg"></i>
                             </a>
                         </div>
                     </Row>

@@ -11,21 +11,12 @@ import {
 import Home from '../pages/home.page';
 import Discount from '../pages/discount.page';
 import Blog from '../pages/blog.page';
-function Japan() {
-    return <h2>Japan</h2>;
-}
-  
-function Europe() {
-    return <h2>Europe</h2>;
-}
+import Contact from '../pages/contact.page';
+import Asian from '../pages/asian.page';
+import Japan from '../pages/japan.page';
+import Europe from '../pages/europe.page';
+ 
 
-function Asian() {
-    return <h2>Discount</h2>;
-}
-
-function Contact() {
-    return <h2>Contact</h2>;
-}
 
 class NavigationRouter extends Component {
     constructor(props) {
@@ -35,20 +26,20 @@ class NavigationRouter extends Component {
         this.toggleDropDown = this.toggleDropDown.bind(this);
 
         this.state = {
-          isOpen: false,
-          dropdownOpen: false,
+            isOpen: false,
+            dropdownOpen: false,
         };
     }
 
     toggleNavbar() {
         this.setState({
-          isOpen: !this.state.isOpen,
+            isOpen: !this.state.isOpen,
         });
     }
 
     toggleDropDown() {
         this.setState(prevState => ({
-          dropdownOpen: !prevState.dropdownOpen
+            dropdownOpen: !prevState.dropdownOpen
         }));
     }
 

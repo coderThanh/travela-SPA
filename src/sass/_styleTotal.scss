@@ -1,0 +1,77 @@
+$color-primary : #0C9CEE;
+$color-secondary : rgba(0, 0, 0, 0.6);
+$color-sale: #ffa501;
+
+.Text--while {
+    color: white;
+}
+
+.Text--muted {
+    color: $color-secondary;
+}
+
+.Text--sale {
+    color: $color-sale;
+}
+
+.Link {
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.Link--primary {
+    color: $color-primary;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.Uppercase {
+    text-transform: uppercase !important;
+}
+
+
+.Font--bold {
+    font-weight: 500;
+ }
+
+.Text--small {
+    font-size: 0.8rem;
+}
+
+.Text--center {
+    text-align: center;
+}
+
+.Capitalize {
+    text-transform: capitalize !important;
+}
+
+.Link--secondary {
+    color: $color-secondary;
+
+    &:hover {
+        text-decoration: none;
+        color: $color-primary;
+    }
+}
+
+.Dl--block {
+    display: block;
+}
+
+.Mb--half {
+    margin-bottom: 0.5rem;
+}
+
+.Mr--half {
+    margin-right: 0.5rem;
+}
+
+.Content--center {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}

@@ -1,8 +1,9 @@
 import React , { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import TitleGroup from './titleGroup.componet';
-import CommentClient from './commentClients.component';
+import TitleGroup from '../components/titleGroup.componet';
+import CommentClient from '../components/commentClients.component';
+
 import urlPerson from '../img/person1.jpg';
 
 
@@ -43,7 +44,7 @@ export default class sessionIntroduce extends Component {
 
     render() {
         const {  contextTitle, commentContext } = this.state;
-        const { commentSrcAvatar, commentCite, commentText } = this.state.commentContext;
+
         return(
             <Container fluid className='session__background'>
                 <Container className='session__content'>

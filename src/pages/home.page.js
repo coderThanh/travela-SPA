@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 
 import HeaderOverlay from '../components/headerOverlay.component';
-import SessionIntroduce from '../components/sessionIntroduce.component';
-import SessionDestination from '../components/sessionDestination.component';
-import SessionComment from '../components/sessionComment.component';
-import SessionBlog from '../components/sessionBlog.component';
-import SessionGetInfor from '../components/sessionGetInfor.component';
+import SessionIntroduce from '../sessions/sessionIntroduce.component';
+import SessionDestinationPlace from '../sessions/sessionDestinationPlace.component';
+import SessionComment from '../sessions/sessionComment.component';
+import SessionBlog from '../sessions/sessionBlog.component';
+import SessionGetInfor from '../sessions/sessionGetInfor.component';
+
 import urlBackground from '../img/bg-header-home.jpg';
-import srcImg01 from '../img/place-01.jpeg';
-import srcImg02 from '../img/place-02.jpeg';
-import srcImg03 from '../img/place-03.jpeg';
+import srcPlace01 from '../img/place-01.jpeg';
+import srcPlace02 from '../img/place-02.jpeg';
+import srcPlace03 from '../img/place-03.jpeg';
 import blogImgSrc01 from '../img/pexels-photo-27603.jpg';
 import blogImgSrc02 from '../img/pexels-photo-104750.jpeg';
 import blogImgSrc03 from '../img/beach-beverage-caribbean-cocktail-68672.jpeg';
@@ -24,32 +25,32 @@ export default class Home extends Component {
                 url: urlBackground,
                 text: 'never stop exploring' 
             },
-            sessionDestination: {
+            sessionDestinationPlace: {
                 contextTitle: {
                     titleSup: "want some cool place",
                     title: "place destination",
                     titleSub: "Dolor sit amet consectetur adipiscing elit Dolor sit amet consectetur adipiscing elit Dolor sit amet consectetur adipiscing elit.",
                 },
-                imgItems: [
+                placeItems: [
                     {
-                        imgUrl: srcImg01,
-                        imgTitle: "Lorem ispum"
+                        placeUrl: srcPlace01,
+                        placeTitle: "Lorem ispum"
                     },
                     {
-                        imgUrl: srcImg02,
-                        imgTitle: "Lorem ispum"
+                        placeUrl: srcPlace02,
+                        placeTitle: "Lorem ispum"
                     },
                     {
-                        imgUrl: srcImg03,
-                        imgTitle: "Lorem ispum"
+                        placeUrl: srcPlace03,
+                        placeTitle: "Lorem ispum"
                     },
                     {
-                        imgUrl: srcImg01,
-                        imgTitle: "Lorem ispum"
+                        placeUrl: srcPlace01,
+                        placeTitle: "Lorem ispum"
                     },
                     {
-                        imgUrl: srcImg03,
-                        imgTitle: "Lorem ispum"
+                        placeUrl: srcPlace03,
+                        placeTitle: "Lorem ispum"
                     },
     
                 ],
@@ -91,14 +92,14 @@ export default class Home extends Component {
     }
 
     render() {
-        const { headerOverlay, sessionDestination, sessionBlog } = this.state;
+        const { headerOverlay, sessionDestinationPlace, sessionBlog } = this.state;
         return(<div className="Home">
             <HeaderOverlay url={ headerOverlay.url } text={ headerOverlay.text }/>
             <main>
                 <SessionIntroduce></SessionIntroduce>       
-                <SessionDestination>
-                { sessionDestination }
-                </SessionDestination>
+                <SessionDestinationPlace>
+                { sessionDestinationPlace }
+                </SessionDestinationPlace>
                 <SessionComment></SessionComment>
                 <SessionBlog>
                     { sessionBlog }

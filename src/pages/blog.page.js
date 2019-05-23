@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import HeaderOverlay from '../components/headerOverlay.component';
-import SessionBlog from '../components/sessionBlog.component';
+import SessionBlog from '../sessions/sessionBlog.component';
 import Pagination from '../components/pagination.component';
 
 import urlBackground from '../img/pexels-photo-89866.jpeg';

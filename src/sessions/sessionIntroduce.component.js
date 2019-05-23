@@ -1,8 +1,9 @@
 import React , { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import TitleGroup from './titleGroup.componet';
-import BlogIntroduce from './blogIntroduce.component';
+import TitleGroup from '../components/titleGroup.componet';
+import BlogIntroduce from '../components/blogIntroduce.component';
+
 import srcAirPlane from '../img/airplane.svg';
 import srcTrain from '../img/train-front.svg';
 import srcBoat from '../img/sailboat.svg';
